@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
-@Service
 
+@Service
 public class StudentService {
+
     @Autowired
     private StudentRepo studentRepository;
 
@@ -38,5 +39,6 @@ public class StudentService {
     public void deleteStudent(Long id) {
         studentRepository.deleteById(id);
     }
-
 }
+
+
